@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('../CSS/FontAwesome/all.min.css');
+*{
+    font-family: 'Lato', sans-serif;}
+*:before{font-family: "Font Awesome 5 Brands", serif;}
+*:after{font-family: "Font Awesome 5 Brands", serif;}
+
+h2{
+    font-size: 35px!important;
+    font-weight: 900!important;
+    line-height: 110%!important;
+}
+h3{
+    font-size: 20px!important;
+    font-weight: 700!important;
+    line-height: 35px!important;
+}
+h4{
+    font-size: 23px!important;
+    line-height: 28px!important;
+    font-weight:500!important;
+}
+h5{
+    font-size: 15px!important;
+    font-weight: normal!important;
+}
+p{
+    font-size: 16px!important;
+    line-height: 28px!important;
+    font-weight: 500!important;
+}
+
+.light{color:white;}
+.dark{color:#31305C;}
+.gray{color:#444B65;}
+.lightgray{color:#9A9A9A;}
+.blue{color:#003399;}
+span{color:#FEBA53;}
+ul{list-style: none;}
+a{ cursor: pointer;}
+button{
+    font-size: 16px!important;
+    border-radius: 8px!important;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    height: 55px;
+    border:none;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button.yellow,button.blue.toyellow:hover{
+    color: #2F3031;
+    background-color: #FEBA53;
+    font-weight: 600;
+}
+button.yellow:hover,button.blue.toyellow:hover{box-shadow: 0px 8px 35px rgb(254 186 83 / 67%);}
+button.white, button.blue.towhite{
+    color: #052C9C;
+    border: #0D42AD solid 1px;
+    background: white;
+}
+button.blue, button.white.toblue:hover{
+    background: #003399;
+    color: white;
+    border: white solid 1px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span{
+    background-color:#FEBA53;
+}
+.owl-theme .owl-dots .owl-dot span
+{
+    background-color: rgba(254,186,83,0.36);
+}
+.owlcarousel div.item .img{
+    width: 260px;
+    height:160px ;
+}
+.owlcarousel div.item img{
+    width: auto;
+    margin: auto;
+}
+
+div.content div.ninth div.content div.icon{
+    background: #FEBA53;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+header div.content div.button button.white{margin-left: 30px;}
+
+input.white{
+    font-size: 15px;
+    margin: 0;
+    background: #fff;
+    border: none !important;
+    height: 55px;
+    border-radius: 8px;
+    padding: 0 15px;
+    transition: box-shadow .3s, border .3s;
+    line-height: 1.15;
+}
+input.gray{
+    color: #003399;
+    font-size: 16px;
+    padding: 25px 15px;
+    border-radius: 8px;
+    height: 55px;
+    border: 1px solid #D9D9D9;
+}
+
+.logo img{height: 50px;}
+
+.col{align-self: center!important;}
+
+div.textincenter{text-align: center;}
+.relative{position: relative;}
+.absolute{position: absolute;}
+div.button.social{
+    color:white;
+    border-radius: 8px;
+    height: 60px;
+    padding-left: 10%;
+    padding-top: 1%;
+    text-align: center;
+}
+
+div.button.social.telegram {background: #1DB1E2;}
+div.button.social.vk {background: #3278A6;}
+div.button.social.facebook {background: #0A5498;}
+div.button.social.talk-me {background: #e22921;}
+div.button.social.online-chat {background: #1a53c6;}
+div.button.social.viber {background: #89539D;}
+div.button.social.whatsapp {background: #128C7E;}
+div.button.social.whatsapp-business {
+    background: #128C7E;
+    line-height: 20px;
+}
+div.button.social.webim {background: #375476;}
+div.button.social.livetex {background: #3c6f82;}
+div.button.social.avito {background: #97cf26;}
+div.button.social.odnoklassniki {background: #ef7f1a;}
+div.button.social.jivosita {background: #00be57;}
+div.button.social.instagram {background: #C13584;}
+div.button.social.add {
+    color: #052994!important;
+    border: dashed 4px #052994;
+    background-color: transparent;
+
+}
+
+
+
+
+
+div.button.social .logo{
+    color:white;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Font Awesome 5 Brands', serif;
+    font-size: 30px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+div.button.social .logo img{
+     width: 40px;
+     height: 40px;
+ }
+div.content div.third div.text div.image img{
+    width: 150px;
+    height: auto;
+}
+
+div.content div.fourth div.image img{
+    top:-400px;
+    width: 100%;
+}
+
+div.content div.fourth div.box{
+    background: #2659BE;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 24px 20px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+div.content div.fourth div.box div.part:not(:last-child){
+    border-right: solid white 1px;
+}
+ div.content div.sixth div.content.wrapperbox{
+     margin: 0 auto;
+     box-shadow: 0 20px 30px rgb(77 68 68 / 12%);
+     border-radius: 20px;
+ }
+div.content div.sixth div.content.wrapperbox .box .header{
+    border-radius: 14px;
+    background: #003399;
+
+}
+
+div.content div.seventh div.wrapperbox {
+    background: linear-gradient(324.65deg, #013398 31.69%, #0F2C65 109.83%);
+    box-shadow: 0 20px 30px rgb(83 122 200 / 72%);
+    border-radius: 10px;
+}
+div.content div.ninth div.content div.item{
+    border-radius: 8px;
+    text-align: left;
+    color: #262549;
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 12%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/*Medium+Large*/
+@media (min-width: 767px){
+    div.button.social.telegram:hover {box-shadow:0px 0px 30px rgb(29 177 226 / 50%);}
+    div.button.social.vk:hover {box-shadow:0px 0px 30px rgb(50 120 166 / 50%);}
+    div.button.social.facebook:hover {box-shadow:0px 0px 30px rgb(10 84 152 / 50%);}
+    div.button.social.talk-me:hover {box-shadow:0px 0px 30px rgb(226 41 33 / 50%);}
+    div.button.social.online-chat:hover {box-shadow:0px 0px 30px rgb(26 83 198 / 50%);}
+    div.button.social.viber:hover {box-shadow:0px 0px 30px rgb(137 83 157 / 50%);}
+    div.button.social.whatsapp:hover {box-shadow:0px 0px 30px rgb(18 140 126 / 50%);}
+    div.button.social.whatsapp-business:hover {box-shadow:0px 0px 30px rgb(18 140 126 / 50%);}
+    div.button.social.webim:hover {box-shadow:0px 0px 30px rgb(55 84 118 / 50%);}
+    div.button.social.livetex:hover {box-shadow:0px 0px 30px rgb(60 111 130 / 50%)}
+    div.button.social.avito:hover {box-shadow:0px 0px 30px rgb(151 207 38 / 50%);}
+    div.button.social.odnoklassniki:hover {box-shadow:0px 0px 30px rgb(239 127 26 / 50%);}
+    div.button.social.jivosita:hover {box-shadow:0px 0px 30px rgb(0 190 87 / 50%);}
+    div.button.social.instagram:hover {box-shadow:0px 0px 30px rgb(193 53 132 / 50%);}
+    div.button.social.add:hover {box-shadow:0px 0px 30px rgb(5 41 148 / 50%);}
+}
+
+
+
+
+
+
+
+
+
+/*XSmall*/
+@media (max-width: 576px){
+    .notdisplay.inxsmall{display: none;}
+}
+/*Small*/
+@media (max-width: 767px) {
+
+    header.medium.small {
+        background: url("../Image/Background/HeaderSmall.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 120% 190%;
+        padding-bottom: 0;
+    }
+    header div.wrapper.medium.small{
+        background: url(../Image/Header/MainImageMedium.webp);
+        background-repeat: no-repeat;
+        background-position: 50% 15%;
+        background-size: 70%;
+    }
+    div.wrapper.medium.small{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .notdisplay.insmall{display: none;}
+    .display.insmall{display: block!important;}
+    .order1.toorder2.insmall{order:2;}
+    .order2.toorder1.insmall{ order:1;}
+    h2{
+        font-size: 22px!important;
+        font-weight: 900!important;
+        line-height: 110% !important;
+        text-align: center;
+    }
+    h4{
+        font-size: 18px!important;
+    }
+    .button{
+        text-align: center;
+    }
+    header div.content{
+        margin-top: 100%!important;
+    }
+
+
+    div.button.social.telegram .logo{background: #1DB1E2;}
+    div.button.social.vk .logo{background: #3278A6;}
+    div.button.social.facebook .logo{background: #0A5498;}
+    div.button.social.talk-me .logo{background: #e22921;}
+    div.button.social.online-chat .logo{background: #1a53c6;}
+    div.button.social.viber .logo{background: #89539D;}
+    div.button.social.whatsapp .logo{background: #128C7E;}
+    div.button.social.whatsapp-business .logo{
+        background: #128C7E;
+        line-height: 20px;
+    }
+    div.button.social.webim .logo{background: #375476;}
+    div.button.social.livetex .logo img{width: 50px; height: auto;}
+    div.button.social.avito .logo{width: 50px; height: auto;}
+    div.button.social.odnoklassniki .logo{background: #ef7f1a;}
+    div.button.social.jivosita .logo{background: #00be57;}
+    div.button.social.instagram .logo{background: #C13584;}
+    div.button.social.add .logo{
+        color: #052994!important;
+        border: dashed 4px #052994;
+        background-color: transparent;
+    }
+
+    div.button.social{
+        background: transparent !important;
+        border:none!important;
+        color:#9A9A9A;
+        margin-bottom: 20px;
+    }
+    div.button.social .logo{
+        font-size: 25px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+
+    div.button.social .logo img{
+        width: 30px;
+        height: 30px;
+    }
+
+
+}
+/*Medium*/
+@media (max-width:992px ) {
+    header.medium {
+        background: url("../Image/Background/HeaderMedium.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 70%;
+        background-size: 120% 190%;
+        padding-bottom: 130px;
+    }
+    header div.wrapper.medium{
+        background: url(../Image/Header/MainImageMedium.webp);
+        background-repeat: no-repeat;
+        background-position: 90% 50%;
+        background-size: 40%;
+    }
+    div.wrapper.medium{
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+
+    .nobackground.inmedium{background: none!important;}
+
+    .dark.tolight.inmedium{color:white !important;}
+    .light.todark.inmedium{color:#262549!important;}
+
+    .order1.toorder2.inmedium{order: 2;}
+    .order2.toorder1.inmedium{order: 1;}
+
+    .notdisplay.inmedium{display: none!important;}
+
+    #trigger{
+        position: relative;
+        width: 25px;
+        height: 25px;
+        display: block;
+        cursor: pointer;
+        background: url("../Image/Header/burger-menu.svg");
+    }
+    ul.nav{display: none;}
+
+    ul.nav.show{
+        display: block;
+        left:5%;
+        right: 5%;
+        width: 90%;
+        height: 100%;
+        position: fixed;
+        opacity: 1;
+        background: rgba(255, 255, 255,1);
+    }
+}
+/*Large*/
+@media (max-width: 2000px) {
+
+    header {
+        background: url("../Image/Background/HeaderLarge.svg");
+        background-repeat: no-repeat;
+        background-position: 400% -130%;
+        background-size: 90% 90%;
+    }
+    header div.wrapper{
+        background: url("../Image/Header/MainImageLarge.png");
+        background-repeat: no-repeat;
+        background-position: 170% 40%;
+        background-size: 80%;
+    }
+    div.wrapper{
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    div.content div.first{
+        background: url("../Image/Background/FirstLine.webp");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: 50% 0%;
+    }
+
+    div.content div.first div.wrapper{
+        background: url("../Image/Background/FirstDots.svg");
+        background-repeat: no-repeat;
+        background-position: -10% 0%;
+        background-size: 50%;
+    }
+    div.content div.second .background{
+        left: 35%;
+        width: 60%;
+        top: 1600px;
+        z-index: -2;
+    }
+    div.content div.third .background.dots{
+        top: 3800px;
+        z-index: -2;
+    }
+    div.content div.third .background.line{
+        left: 0%;
+        width: 80%;
+        top: 2650px;
+        z-index: -1;
+    }
+    div.content div.fourth .background.line{
+    top: -700px;
+    left: -650px;
+    z-index: 1;
+    width: 190%;
+    }
+
+    div.content div.fourth .background.dots{
+        top: -700px;
+        left: -650px;
+        z-index: -1;
+        width: 190%;
+    }
+
+    div.content div.first .image img.relative.left{
+        left: -40%;
+        width: 140%;
+    }
+    div.content div.second  .image img.relative.right{
+        width: 150%;
+        right: 10%;
+        z-index: -1;
+    }
+    div.content div.third  .image img.relative.left {
+        width: 120%;
+        left: -30%;
+    }
+
+
+    div.content div.second div.wrapper{
+        background: url("../Image/Background/SecondDots.webp");
+        background-repeat: no-repeat;
+        background-position: 100% 80%;
+        background-size: 50%;
+        overflow-x: hidden;
+    }
+
+
+    .order1{order: 1;}
+    .order2{order: 2;}
+
+
+    div.logo h2:before{
+        content: "\f369";
+        font-family: Font Awesome\ 5 Brands;
+    }
+    div.logo h2{
+        color: #003399;
+        font-family: "Roboto", serif;
+        font-weight: 700;
+        font-size: 35px;
+    }
+
+    div.logo h2 b{font-weight: 900;}
+
+    .notdisplay.inlarge{display: none;}
+
+    div.content div.fourth div.row.block{
+        background: linear-gradient(311.93deg, #013398 49.86%, #306FED 102.75%);
+        box-shadow: 0px 20px 30px rgb(83 122 200 / 72%);
+        border-radius: 20px;
+    }
+
+    div.content div.sixth  div.content ul li p{display: none;}
+
+    div.content div.sixth  div.content ul:not(#services) li:before{
+        content:"\f00c";
+        font-weight: bold;
+        font-family: "Font Awesome 5 Free", serif;
+    }
+    div.content div.sixth  div.content ul li.have:before{color:#FEBA53}
+}

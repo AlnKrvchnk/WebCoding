@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+
+    <link rel="stylesheet" href="../OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/FontAwesome/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+<header class="small medium">
+    <div class="wrapper  pb-5 small medium">
+        <div class="navbar row container-fluid p-0 pt-lg-4 pb-lg-5 mb-lg-5 mb-4">
+            <div class="logo col col-11 col-lg-6 text-center order1 toorder2 inmedium "><a onclick="redirectTo('logo')"><img src="../Image/Logo.svg" alt=""></a>
+                </div>
+            <div class="col  col-1 col-lg-6 menu order2 toorder1 inmedium ">
+                <div  id="trigger"></div>
+                <ul class="nav navbar justify-content-end" id="menu">
+                    <li class="light todark inmedium"><a onclick="redirectTo('writetodeveloper');"><h5>НАПИСАТЬ РАЗРАБОТЧИКАМ</h5></a> </li>
+                    <li class="dark notdisplay inlarge"><a onclick="redirectTo('logo');"><h5>Бот <b>Переводчик</b> </h5></a> </li>
+                </ul>
+            </div>
+        </div>
+<div class="row display insmall d-none my-5" ></div>
+        <div class="content container-fluid p-0 py-lg-5 m-0 mb-lg-5">
+            <div class="row">
+                <div class="col text pb-5 p-lg-0 col-12 col-lg-6">
+                      <h2 class="dark tolight inmedium m-0 pb-4 pb-lg-3 col-11">Самый функциональный переводчик текстов</h2>
+                      <h4 class="dark tolight inmedium p-0 m-0 pt-md-3 pb-lg-5 mb-lg-5 col-12 col-md-6 col-lg-12" >Распознавание текста с телефонных фотографий
+                          <div class="rw-words text-typing" id="text-typing"></div>
+                        </h4>
+                </div>
+                <div class="col button mt-5 m-lg-0  pt-5 pb-lg-5 col-12  ">
+                    <button class="yellow" onclick="redirectTo('freeaccess')">Бесплатный доступ на 3 дня</button>
+                      <button class="white toblue notdisplay inmedium" onclick="redirectTo('wanttouse')">Хочу воспользоваться ботом</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="content">
+    <div class="first nobackground inmedium pb-5 py-lg-5">
+        <div class="wrapper nobackground inmedium small medium">
+            <div class="row">
+                <div class="col image notdisplay inmedium col-md-5 d-flex">
+                    <img class="relative left" src="../Image/Content/FirstRobo.svg" alt="Image">
+                </div>
+                <div class="col text col-12 col-lg-7">
+                    <div class="header row ">
+                        <h2 class="dark mb-4" >Один инструмет для перевода всех языков в любой социальной сети или мессенджере</h2>
+                        <p class="lightgray mb-4">Подключите сервис один раз и вы легко сможете интегрировать его со всеми самыми популярными мессенджарами и социальными сетями</p>
+                    </div>
+                    <div class="content row  row-cols-3 row-cols-md-4 row-cols-lg-3 p-0 m-s-0 ml-md-n3 mr-md-0">
+                        <div class="col mb-4 px-4 px-md-3  ">
+                            <div class="button social telegram ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><i class="fab fa-telegram-plane"></i></div>
+                                    <div class="col p-0">Telegram</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3  ">
+                            <div class="col button social vk ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><i class="fab fa-vk"></i></div>
+                                    <div class="col p-0">Вконтакте</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3  ">
+                            <div class="col button social facebook ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><i class="fab fa-facebook-f"></i></div>
+                                    <div class="col p-0">Facebook</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3  ">
+                            <div class="col button social talk-me ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><img src="../Image/Content/talkme_white_logo.webp" alt=""></div>
+                                    <div class="col p-0">Talk-me</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3  ">
+                            <div class="col button social online-chat ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><img src="../Image/Content/online_chat_logo.webp" alt="Img"></div>
+                                    <div class="col p-0">Online-chat</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3  ">
+                            <div class="col button social viber ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><i class="fab fa-viber"></i></div>
+                                    <div class="col p-0">Viber</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3  ">
+                            <div class="col button social whatsapp ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><i class="fab fa-whatsapp"></i></div>
+                                    <div class="col p-0">Whatsapp</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3 notdisplay insmall ">
+                            <div class="col button social whatsapp-business ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><i class="fab fa-whatsapp"></i></div>
+                                    <div class="col p-0">Whatsapp Business API</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3  ">
+                            <div class="col button social webim ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><img src="../Image/Content/logo_webim.svg" alt="Img"></div>
+                                    <div class="col p-0">WebIm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3  ">
+                            <div class="col button social livetex ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><img src="../Image/Content/livetex_logo.webp" alt="Img"></div>
+                                    <div class="col p-0">LiveTex</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3  ">
+                            <div class="col button social avito ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><img src="../Image/Content/avito_logo.webp" alt="Img"></div>
+                                    <div class="col p-0">Avito</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3  ">
+                            <div class="col button social odnoklassniki ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><i class="fab fa-odnoklassniki"></i></div>
+                                    <div class="col p-0">Одноклассники</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3  ">
+                            <div class="col button social instagram ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0"><i class="fab fa-instagram"></i></div>
+                                    <div class="col p-0">Instagram</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4 px-4 px-md-3 notdisplay insmall ">
+                            <div class="col button social add ">
+                                <div class="row row-cols-1 row-cols-sm-2">
+                                    <div class="col logo p-0" style="font-weight: bold;color:#003399;">+</div>
+                                    <div class="col p-0">Добавить свой</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second nobackground inmedium py-lg-5 mt-lg-5">
+        <div class="wrapper nobackground inmedium small medium">
+        <div class="row ">
+            <div class="col text col-12 col-lg-7">
+                <div class="header pb-5"><h2 class="dark">Максимальный инструментарий</h2></div>
+                <div class="owlcarousel content row row-cols-1 row-cols-md-2 ">
+                    <div class="col pb-lg-5 item">
+                        <div class="img pb-lg-5"><img src="../Image/Content/SecondIcon1.webp" alt=""></div>
+                        <div class="text pb-lg-3">
+                            <h3 class="gray">Своя CRM</h3>
+                            <p class="lightgray" >Управляйте Вашими клиентами прямо из админ панели</p>
+                        </div>
+                    </div>
+                    <div class="col pb-lg-5 item">
+                        <div class="img pb-lg-5"><img src="../Image/Content/SecondIcon2.webp" alt=""></div>
+                        <div class="text pb-lg-3">
+                            <h3 class="gray">Интеграция</h3>
+                            <p class="lightgray">Чат-боты интегрируются с CRM, ERP, web API и внутренними системами заказчика</p>
+                        </div>
+                    </div>
+                    <div class="col pb-lg-5 item">
+                        <div class="img pb-lg-5"><img src="../Image/Content/SecondIcon3.webp" alt=""></div>
+                        <div class="text pb-lg-3">
+                            <h3 class="gray">Автоматизация</h3>
+                            <p class="lightgray">Автоматизируйте рассылки, скрипты продаж, сбор информации о клиенте</p>
+                        </div>
+                    </div>
+                    <div class="col pb-lg-5 item">
+                        <div class="img pb-lg-5"><img src="../Image/Content/SecondIcon4.webp" alt=""></div>
+                        <div class="text pb-lg-3">
+                            <h3 class="gray">Мобильное приложение</h3>
+                            <p class="lightgray">Работайте с ботом не только на сайте, но и с помощью мобильного приложения Cкачать...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-5 image notdisplay inmedium ">
+                <img class="background absolute" src="../Image/Background/SecondLine.webp" alt="">
+                <img class="relative right" src="../Image/Content/SecondImage.svg" alt="Img"></div>
+        </div></div>
+    </div>
+
+
+    <div class="third  ">
+        <div class="wrapper medium small">
+        <div class="row ">
+            <div class="col col-5 image notdisplay inmedium">
+                <img class="relative left" src="../Image/Content/Third.svg" alt="">
+                <img class="absolute background dots" src="../Image/Background/ThirdDots.webp" alt="">
+                <img class="absolute background line" src="../Image/Background/ThirdLine.webp" alt="">
+            </div>
+            <div class="col col-12 col-lg-7 text">
+                <div class="header pb-4 pb-md-5"><h2 class="dark">Вы не один</h2></div>
+                  <div class="owlcarousel">
+                    <div class="row top pb-lg-5 item">
+                        <div class="col col-12 col-md-4 image"><img src="../Image/Content/ThirdIcon1.webp" alt=""></div>
+                        <div class="col col-12 col-md-8 text">
+                            <h3 class="gray">Поддержка без выходных и праздников</h3>
+                            <p class="lightgray">В случае возникновения нештатной ситуации Вы не останетесь с ней один на один. Наши специалисты работают ежедневно с 9 до 21 по МСК</p>
+                        </div>
+                    </div>
+                    <div class="row middle pb-lg-5 item">
+                        <div class="col col-12  col-md-4 image"><img src="../Image/Content/ThirdIcon2.png" alt=""></div>
+                        <div class="col col-12 col-md-8 text">
+                            <h3 class="gray">Активное сообщество</h3>
+                            <p class="lightgray">Загляните в наш чатик ВКонтакте там Вам всегда помогут и посоветуют другие пользователи Salebot</p>
+                        </div>
+                    </div>
+                    <div class="row bottom pb-lg-5 item">
+                        <div class="col col-12 col-md-4 image"><img src="../Image/Content/ThirdIcon3.png" alt=""></div>
+                        <div class="col col-12 col-md-8 text">
+                            <h3 class="gray">Подробные мануалы</h3>
+                            <p class="lightgray">Хотите внедрить что-то новое ?Начните с наших мануалов</p>
+                        </div>
+                </div>
+            </div></div>
+        </div>
+        </div>
+    </div>
+    <div class="fourth py-md-5 my-md-5">
+        <div class="wrapper pt-md-5 medium small">
+        <div class="row block p-lg-5">
+            <div class="row row-cols-1 ">
+                <div class="col text col-md-7">
+                    <div class="header pb-md-3"><h2 class="light pb-md-3">Вы используете Бот-Переводчик</h2></div>
+                    <div class="row content pb-md-5">
+                        <p class="light pb-md-5">Цель сервиса SaleBot - объединять вокруг себя активных людей, создавать комьюнити. Важен их опыт, мнение, желания. Так мы развиваемся, внедряем новый функционал, делаем сервис удобным. Комьюнити помогает новым пользователям освоить сервис или быстро перенести проекты из других сервисов.
+                            SaleBot - это дружеская атмосфера, где всегда поддержат и помогут.</p>
+                    <div class="col-5 button">
+                       <button class="yellow">Написать чат-боту</button>
+                   </div>
+                        <div class="col-7"><h3 class="light pt-1">Добро пожаловать в семью!</h3></div>
+                    </div>
+                </div>
+                <div class="relative col image col-md-5">
+                    <img class="background dots absolute notdisplay inmedium" src="../Image/Background/FourthDots.webp" alt="">
+                    <img  class="background line absolute notdisplay inmedium" src="../Image/Background/FourthLine.webp" alt="">
+                    <img class="absolute" src="../Image/Content/FourthImage.webp" alt=""></div>
+            </div>
+            <div class="box row ">
+                <div class="col col-12 col-md-3 part">
+                    <div class="row">
+                    <div class="col icon col-3"><img src="../Image/Content/FourthIcon1.webp" alt=""></div>
+                    <div class="col col-9"><p class="light">Безграничный функционал</p></div>
+                    </div></div>
+                <div class="col col-12 col-md-3 part">
+                    <div class="row">
+                    <div class="col icon col-3"><img src="../Image/Content/FourthIcon2.webp" alt=""></div>
+                    <div class="col col-9"><p class="light ">Конструктор не тормозит</p></div>
+                    </div></div>
+
+                <div class="col col-12 col-md-3 part">
+                    <div class="row">
+                    <div class="col icon col-3"><img src="../Image/Content/FourthIcon3.webp" alt=""></div>
+                    <div class="col col-9"><p class="light">Официальный и серый вотсап</p></div>
+                    </div></div>
+                <div class="col col-12 col-md-3 part">
+                    <div class="row">
+                    <div class="col icon col-3"><img src="../Image/Content/FourthIcon4.webp" alt=""></div>
+                    <div class="col col-9"><p class="light">Ежедневные обновления</p></div>
+                    </div></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="fifth">
+        <div class="wrapper">
+        <div class="row">
+            <div class="title textincenter"><h2 class="dark">Выбирайте Бот-Переводчик</h2></div>
+            <div class="owlcarousel">
+                <div class="item row">
+            <div class="col image col-12 col-md-6"><img src="../Image/Content/FifthImage1.webp" alt=""></div>
+            <div class="col text col-12 col-md-6">
+                <h3 class="gray">Начните свой бизнес без команды</h3>
+                <p>Вы можете полностью автоматизировать все процессы от приема заявок и предварительный консультации, до контроля оплаты.Вам останется только заниматься любимым делом.</p>
+            </div></div>
+                <div class="item row">
+            <div class="col image col-12 col-md-6"><img src="../Image/Content/FifthImage2.webp" alt=""></div>
+            <div class="col text col-12 col-md-6">
+                <h3 class="gray">Подключайтесь!</h3>
+                <p class="lightgray">Подключитесь к чату с ботом в любой момент и дожмите клиента.</p>
+            </div></div>
+                    <div class="item row " >
+            <div class="col image col-12 col-md-6"><img src="../Image/Content/FifthImage3.webp" alt=""></div>
+            <div class="col text col-12 col-md-6">
+                <h3 class="gray">Держите все в одном месте!</h3>
+                <p class="lightgray">Одна система для всех необходимых инструментов, Help-desk, CRM, отчетность, минилендинги, чат-боты, подсказки для оператора</p>
+            </div></div>
+                        <div class="item row">
+            <div class="col image col-12 col-md-6"><img src="../Image/Content/FifthImage4.webp" alt=""></div>
+            <div class="col text col-12 col-md-6">
+                <h3 class="gray">Оптимизируйте работу компании!</h3>
+                <p class="lightgray">Доверьте административные функции, и сбор информации о клиенте чат-боту. Оставьте сотрудникам только интересные задачи.</p>
+            </div></div>
+                            <div class="item row">
+            <div class="col image col-12 col-md-6"><img src="../Image/Content/FifthImage5.webp" alt=""></div>
+            <div class="col text col-12 col-md-6">
+                <h3 class="gray">Вовлекайте!</h3>
+                <p class="lightgray">Обученный чат-бот побуждает посетителей к совершению целевых действий, сопровождает их до нужных страниц, анонсирует специальные предложения и важные новости.</p>
+            </div></div>
+        </div></div>
+    </div>
+    </div>
+
+    <div class="sixth">
+        <div class="wrapper">
+        <div class="row textincenter">
+            <div class="header textincenter">
+                <div class="title  "><h2 class="dark">Выберите свой тариф</h2></div>
+                <div class="row content">
+                   <a ><p class="lightgray">За месяц</p> </a>
+                   <a ><p class="lightgray">За 1 год (-20%)</p></a>
+                </div>
+            </div>
+            <div class="content wrapperbox row row-cols-1 row-cols-md-4">
+                <div class="col box">
+                    <div class="header p-4">
+                        <div class="title pb-3 pb-md-4"><h3 class="light">Индивидуальный</h3></div>
+                        <div class="content">
+                            <p class="light pb-3 pb-md-4">Соберем тариф под ваши нужды</p>
+                            <p class="light pb-3 pb-md-4">Рассылки неограничены</p>
+                        </div>
+                        <div class="button"><button class="blue">Обсудить тариф</button></div>
+                    </div>
+                    <div class="content notdisplay insmall">
+                        <ul id="services"></ul>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="header p-4">
+                        <div class="title  "><h3 class="dark">Базовый</h3></div>
+                        <div class="content">
+                            <p class="dark">Многоуровневые автоворонки</p>
+                            <h2 class="gray" style="font-size: 28px!important;">1099 <h2 class="lightgray" style="font-size: 20px!important;">руб / мес</h2></h2>
+                        </div>
+                        <div class="button"><button class="blue">Попробовать бесплатно</button></div>
+                    </div>
+                    <div class="content">
+                        <ul id="base"></ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="header p-4">
+                        <div class="title "><h3 class="dark">Стандартный</h3></div>
+                        <div class="content">
+                            <p class="dark">Автоворонки и рассылки</p>
+                            <h2 class="gray" style="font-size: 28px!important;">1099 <h2 class="lightgray" style="font-size: 20px!important;">руб / мес</h2></h2>
+                        </div>
+                        <div class="button"><button class="blue">Попробовать бесплатно</button></div>
+                    </div>
+                    <div class="content">
+                        <ul id="standart"></ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="header p-4">
+                        <div class="title "><h3 class="dark">Премиум</h3></div>
+                        <div class="content">
+                            <p class="dark">Полная автоматизация вашего бизнеса</p>
+                            <h2 class="gray" style="font-size: 28px!important;">1099 <h2 class="lightgray" style="font-size: 20px!important;">руб / мес</h2></h2>
+                        </div>
+                        <div class="button"><button class="blue">Попробовать бесплатно</button></div>
+                    </div>
+                    <div class="content">
+                        <ul id="premium"></ul>
+                    </div>
+                </div>
+
+            </div>
+        </div></div>
+    </div>
+    <div class="seventh">
+        <div class="wrapper">
+        <div class="row row-cols-1 row-cols-md-2 p-4 wrapperbox">
+            <div class="col">
+                <h2 class="light">Хотите сделать крутого бота?</h2>
+                <h2 class="light">Мы научим!</h2>
+            </div>
+            <div class="col">
+                <div class="row">
+                <input class="col col-12 col-md-8 white" type="number" placeholder="Ваш номер телефона" >
+                <button class="yellow col col-12 col-md-4">Записаться</button>
+                </div>
+            </div>
+            <div class="col">
+                <p class="light">Пройдите курс длиной 14 дней всего за 7000 рублей и сможете создавать ботов любого уровня сложности, вплоть до полностью автоматизированных информационных систем</p>
+            </div>
+        </div></div>
+    </div>
+    <div class="eighth">
+        <div class="wrapper">
+        <div class="row">
+            <div class="title textincenter"><h2 class="dark ">Технологии</h2></div>
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div></div>
+    </div>
+    <div class="ninth">
+        <div class="wrapper">
+        <div class="row mx-0 px-0 mx-md-5 px-md-5">
+            <div class="header textincenter">
+               <h2 class="dark">Внедрите бота в Ваш бизнес</h2>
+                <p class="dark">Пока это не сделали конкуренты</p>
+            </div>
+            <div class="content row row-cols-1 row-cols-lg-2 p-0">
+                <div class="col p-0 ">
+                    <div class="item m-0 my-3 m-md-4 p-4 m-lg-3 p-lg-3">
+                        <div class="row">
+                            <div class="col col-3 mx-1 mx-md-3 icon"><img class="pt-2" src="../Image/Content/Ninth1.png" alt=""></div>
+                            <div class="col col-9 text">
+                                <h3 class="dark" style="font-weight: 800">Строительство</h3>
+                                <p>Автоматизируйте расчет строительных работ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="item m-0 my-3 m-md-4  p-4 m-lg-3 p-lg-3">
+                        <div class="row">
+                            <div class="col col-3 mx-1 mx-md-3 icon"><img class="pt-2" src="../Image/Content/Ninth2.png" alt=""></div>
+                            <div class="col col-9 text">
+                                <h3 class="dark" style="font-weight: 800">Бьюти услуги</h3>
+                                <p>Автоматизируйте предварительную запись</p>
+                            </div></div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="item m-0 my-3 m-md-4  p-4 m-lg-3 p-lg-3">
+                        <div class="row">
+                            <div class="col col-3 mx-1 mx-md-3 icon"><img class="pt-2" src="../Image/Content/Ninth3.png" alt=""></div>
+                            <div class="col col-9 text">
+                                <h3 class="dark" style="font-weight: 800">Автомагазин</h3>
+                                <p>Автоматизируйте подбор автозапчастей</p>
+                            </div></div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="item m-0 my-3 m-md-4  p-4 m-lg-3 p-lg-3">
+                        <div class="row">
+                            <div class="col col-3 mx-1 mx-md-3 icon"><img class="pt-2" src="../Image/Content/Ninth4.png" alt=""></div>
+                            <div class="col col-9 text">
+                                <h3 class="dark" style="font-weight: 800">CMM</h3>
+                                <p>Автоматизируйте работу с клиентами</p>
+                            </div></div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="item m-0 my-3 m-md-4  p-4 m-lg-3 p-lg-3">
+                        <div class="row">
+                            <div class="col col-3  mx-1 mx-md-3 icon"><img class="pt-2" src="../Image/Content/Ninth5.png" alt=""></div>
+                            <div class="col col-9 text">
+                                <h3 class="dark" style="font-weight: 800">Рестораны и кафе</h3>
+                                <p>Автоматизируйте резервирование столиков и заказы</p>
+                            </div></div>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="item m-0 my-3 m-md-4  p-4 m-lg-3 p-lg-3">
+                        <div class="row">
+                            <div class="col col-3 mx-1 mx-md-3 icon"><img class="pt-2" src="../Image/Content/Ninth6.png" alt=""></div>
+                            <div class="col col-9 text">
+                                <h3 class="dark" style="font-weight: 800">Обучение</h3>
+                                <p>Автоматизируйте изучение</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div></div>
+    </div>
+    <div class="tenth">
+        <div class="wrapper">
+        <div class="row">
+            <div class="title textincenter dark">
+                <h2 >Нет времени на создание бота?</h2>
+                  <h2>  Обратитесь к нам за помощью</h2></div>
+        <div class="content">
+            <div class="row mt-4">
+                <div class="col col-12 col-md-4">
+                    <label for="username">Ваше имя?</label><br/>
+                    <input class="gray w-100 mt-2" type="text" id="username" placeholder="Как Вас зовут?">
+                </div>
+                <div class="col col-12 col-md-4">
+                    <label for="usernumber">Ваш номер телефона?</label><br/>
+                    <input class="gray w-100 mt-2" type="text" id="usernumber" placeholder="Как с Вами связаться?">
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row mt-4">
+                <div class="col col-12 col-md-8">
+                    <label for="usertext">Сообщение</label><br/>
+                    <input class="gray w-100 mt-2" type="text" id="usertext" placeholder="Как к Вам обращаться?">
+                </div>
+                <div class="col col-12 col-md-4">
+                    <button class="white mt-4 w-75">Отправить</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="container-fluid">
+    <div class="wrapper">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col notdisplay insmall"><p>Нет времени на ручной перевод?</p></div>
+        <div class="col">
+            <button class="yellow order1 toorder2 insmall">Написать боту</button>
+        </div>
+        <div class="col notdisplay inxsmall order2 toorder1 inxsmall"><h3>Попробуй это просто!</h3></div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col logo">
+            <a class="navbar-brand"  onclick="redirectTo('logo')"><h2 class="dark tolight">Бот<b>Переводчик</b> </h2></a>
+        </div>
+        <div class="col"><a onclick="redirectTo('writetodeveloper');"><h3>Написать разработчикам</h3></a></div>
+        <div class="col links">
+            <a class="facebook" onclick="redirectTo('facebook')">Facebook</a>
+            <a class="vk" onclick="redirectTo('vk')">ВКонтакте</a>
+        </div>
+    </div>
+    <div class="row">
+        <p>text?</p>
+        <p>text?</p>
+        <p>text?</p>
+    </div>
+    </div>
+</footer>
+
+
+
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="../OwlCarousel/jquery.min.js"></script>
+<script src="../OwlCarousel/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+<script src="../JS/index.js"></script>
+
+</body>
+
+</html>
