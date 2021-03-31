@@ -70,7 +70,6 @@ document.getElementById("trigger").onclick = function() {
 function open() {
     document.getElementById("menu").classList.toggle("show");
     document.getElementById("trigger").classList.toggle("show");
-
 }
 
 //Тарифы
@@ -181,39 +180,75 @@ startTicker();
 
 //Каруселька
 
-function getDevice (){
-    $( window ).resize(function (){
-    if($(window).width() <= 767)
-    {  callOwlCarousel(); }})
-    if($(window).width() <= 767)
-    {  callOwlCarousel(); }
-}
-getDevice();
 
+callOwlCarousel()
 function callOwlCarousel(){
-    var carousels=document.getElementsByClassName("owlcarousel");
-    for(var carousel of carousels){
-        carousel.classList.toggle("owl-carousel");
-        carousel.classList.toggle("owl-theme");
         $('.owl-carousel').owlCarousel({
             touchDrag: true,
             dots: true,
             loop: true,
             items: 1,
         })
-    }
-
 }
 
 //Чатик
 document.getElementById("chattriger").onclick = function() {
     openChat()};
+document.getElementById("chatclose").onclick = function() {
+    openChat()};
 
 function openChat() {
     document.getElementById("chatcontainer").classList.toggle("show");
+    document.getElementById("chattriger").classList.toggle("notshow");
 }
 
-jQuery(function($){
-    var convForm = $('#chat').convform();
-    console.log(convForm);
-});
+
+
+function answerMassegeBot(answer,id){
+    content = document.getElementsByClassName("contentChat")[id];
+
+    var text = document.createElement('div');
+    text.classList.toggle("text")
+    text.textContent=answer;
+
+    var botMassege=document.createElement('div');
+    botMassege.classList.toggle("botmessage")
+    botMassege.appendChild(text);
+
+    content.appendChild(botMassege);
+
+}
+
+function sendAnswer( text,id){
+
+    if(text == 'Привет!'){
+        answerMassegeBot("Мяу...",id);
+    }
+    else if(text=="Пока!"){
+        answerMassegeBot("Мяу, мяу, мяу...",id);
+    }
+    else {
+        answerMassegeBot("Я вас не понимаю!",id);
+    }
+}
+
+function sendMassegeBot(usermassege,id){
+if(usermassege.value!='') {
+    content = document.getElementsByClassName("contentChat")[id];
+
+    var text = document.createElement('div');
+    text.classList.toggle("text")
+    text.textContent = usermassege.value;
+
+    var userMassege = document.createElement('div');
+    userMassege.classList.toggle("usermessage")
+    userMassege.appendChild(text);
+
+    content.appendChild(userMassege);
+
+    sendAnswer(usermassege.value,id);
+    usermassege.value = "";
+
+}
+}
+

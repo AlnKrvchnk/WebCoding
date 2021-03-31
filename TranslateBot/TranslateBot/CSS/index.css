@@ -55,16 +55,18 @@ button{
     padding-left: 20px;
     padding-right: 20px;
 }
-
+div.content div.sixth div.col div.header{
+    height: 350px;
+}
 button.yellow,button.blue.toyellow:hover{
     color: #2F3031;
     background-color: #FEBA53;
     font-weight: 600;
 }
 button.yellow:hover,button.blue.toyellow:hover{box-shadow: 0px 8px 35px rgb(254 186 83 / 67%);}
-button.white, button.blue.towhite{
+button.white, button.blue.towhite:hover{
     color: #052C9C;
-    border: #0D42AD solid 1px;
+    border: #4f78cd solid 1px;
     background: white;
 }
 button.blue, button.white.toblue:hover{
@@ -80,14 +82,16 @@ button.blue, button.white.toblue:hover{
 {
     background-color: rgba(254,186,83,0.36);
 }
-.owlcarousel div.item .img{
-    width: 260px;
-    height:160px ;
+.owl-carousel div.item .image{
+    height: 200px;
 }
-.owlcarousel div.item img{
+.owl-carousel div.item img{
+    height: 100%;
     width: auto;
     margin: auto;
 }
+
+
 
 input:focus{
     outline: none;
@@ -125,6 +129,13 @@ input.gray{
 
 
 div:not(.sixth) .col{align-self: center!important;}
+
+div.content div.sixth div.col div.button {
+    margin-bottom: 0px;
+    margin-top: auto;
+}
+
+
 
 div.textincenter{text-align: center;}
 .relative{position: relative;}
@@ -195,7 +206,6 @@ div.content div.fourth div.box{
     background: #2659BE;
     border-radius: 8px;
     margin: 0 auto;
-    padding: 24px 20px;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
@@ -209,6 +219,7 @@ div.content div.fourth div.box div.part:not(:last-child){
      margin: 0 auto;
      box-shadow: 0 20px 30px rgb(77 68 68 / 12%);
      border-radius: 20px;
+     background: white;
  }
 div.content div.sixth div.content.wrapperbox .box .header{
     border-radius: 14px;
@@ -237,6 +248,204 @@ div.content div.eighth img{
 div.content div.sixth ul li{
     margin-bottom: 20px;
 }
+div.content div.sixth  div.content ul li.donthave:before {
+    color:#9A9A9A;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ div.chatblock{
+    position: relative;
+    display: block;
+    width: 320px;
+    height: 500px;
+    top: 0;
+    right: 0;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 20%);
+    border-radius: 10px ;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    z-index: 100;
+    margin: auto;
+}
+div.chatblock div.head{
+    height: 60px;
+    width: 100%;
+    margin: auto;
+    padding-left: 10px;
+    padding-right:  10px;
+    background:#0D42AD  ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+div.chatblock div.head h3{
+    padding-left: 10px;
+    line-height: 20px!important;
+    font-size: 16px!important;
+}
+div.chatblock div.head h5{
+    padding-left: 10px;
+    line-height: 20px!important;
+    font-size: 13px!important;
+    opacity: 0.9;
+}
+div.chatblock div.contentChat{
+
+    bottom: 0;
+    height: 78%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 5px;
+    box-shadow:  inset 0px -3px 20px 0px rgb(0 0 0 / 5%);
+}
+div.chatblock div.bottom{
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+div.chatblock div.bottom input, div.chatblock div.bottom input:focus{
+height: 100%;
+    border: none!important;
+    outline: none;
+    box-shadow: none;
+}
+div.chatblock div.bottom .buttonicon,#chatclose{
+    color: #0D42AD;
+    font-size: 25px;
+    right: 0;
+    left: auto;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+}
+#chatclose{
+    color: white;
+    opacity: 0.7;
+    margin-right: 20px;
+}
+#chatclose:hover{
+    opacity: 1;
+}
+div.chatblock div.contentChat{
+   overflow-y: scroll;
+
+
+}
+div.chatblock div.contentChat .botmessage{
+    background: rgb(240, 240, 240);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: fit-content;
+    max-width: 80%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+div.chatblock div.contentChat .text{
+    width: 100%;
+}
+div.chatblock div.contentChat .usermessage{
+    background: rgb(240, 240, 256);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: fit-content;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+div.chatblock div.contentChat::-webkit-scrollbar { width: 10px; height: 500px;}
+div.chatblock div.contentChat::-webkit-scrollbar-button {  display: none; }
+div.chatblock div.contentChat::-webkit-scrollbar-track-piece { background-color: white;}
+div.chatblock div.contentChat::-webkit-scrollbar-thumb {  background-color: rgba(108 149 255/40%); border-radius: 5px;}
+
+
+#chattriger{
+    background: rgb(26, 83, 198);
+    height: 60px;
+    width: 60px;
+    transition: all 0.3s ease 0s;
+    position: fixed;
+    bottom: 60px;
+    right: 0px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: rgb(0 0 0 / 8%) 0px 0px 32px, rgb(0 0 0 / 8%) 0px 0px 24px, rgb(0 0 0 / 8%) 0px 0px 8px, rgb(0 0 0 / 8%) 0px 0px 1px;
+    cursor: pointer;
+    z-index: 2147483645;
+    padding-top: 10px!important;
+    padding-left: 13px!important;
+}
+#chatcontainer {
+    display: none;
+}
+#chattriger.notshow{
+    display: none;
+}
+#chatcontainer.show {
+    position: fixed;
+    display: block;
+    width: 320px;
+    height: 500px;
+    bottom: 5px;
+    right: 5px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 20%);
+    border-radius: 10px 10px 0 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    z-index: 100;
+    margin: auto;
+}
+.spinLoader {
+    display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Medium+Large*/
 @media (min-width: 767px){
@@ -258,41 +467,6 @@ div.content div.sixth ul li{
 }
 
 
-
- #chattriger{
-    background: rgb(26, 83, 198);
-    height: 60px;
-    width: 60px;
-    transition: all 0.3s ease 0s;
-    position: fixed;
-    bottom: 60px;
-    right: 0px;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    box-shadow: rgb(0 0 0 / 8%) 0px 0px 32px, rgb(0 0 0 / 8%) 0px 0px 24px, rgb(0 0 0 / 8%) 0px 0px 8px, rgb(0 0 0 / 8%) 0px 0px 1px;
-    cursor: pointer;
-    z-index: 2147483645;
-}
-#chatcontainer{
-    display: none;
-}
-#chatcontainer.show{
-    margin: auto;
-    position: fixed;
-    display: block;
-    width: 340px;
-    height: 500px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    box-shadow: 0 10px 30px rgb(0 0 0 / 20%);
-    border-radius: 10px 10px 0 0;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-    font-family: 'Roboto', sans-serif;
-    background: white;
-    z-index: 100;
-}
 
 
 
@@ -324,8 +498,8 @@ div.content div.sixth ul li{
 
     .notdisplay.insmall{display: none;}
     .display.insmall{display: block!important;}
-    .order1.toorder2.insmall{order:2;}
-    .order2.toorder1.insmall{ order:1;}
+    .toorder2.insmall{order:2;}
+    .toorder1.insmall{ order:1;}
     h2{
         font-size: 22px!important;
         font-weight: 900!important;
@@ -387,6 +561,10 @@ div.content div.sixth ul li{
     div.content div.sixth  div.content ul li.have p{
         display: inline-block;
         margin-left: 10px;
+        margin-bottom:0 ;
+    }
+    div.content div.sixth  div.content ul li{
+        margin-bottom:5px ;
     }
 
     div.content div.sixth  div.content ul li.donthave:before {
@@ -396,6 +574,16 @@ div.content div.sixth ul li{
     div.content div.sixth  div.content ul {
         text-align: left;
     }
+    div.content div.sixth div.col div.header{
+        height: auto!important;
+    }
+    div.content div.fourth div.block img.absolute{
+        position: inherit;
+        top:10px;
+    }
+    div.content div.fourth div.box div.part:not(:last-child) {
+        border-right: none;
+        border-bottom:solid white 1px ;}
 
 }
 /*Medium*/
@@ -424,8 +612,8 @@ div.content div.sixth ul li{
     .dark.tolight.inmedium{color:white !important;}
     .light.todark.inmedium{color:#262549!important;}
 
-    .order1.toorder2.inmedium{order: 2;}
-    .order2.toorder1.inmedium{order: 1;}
+    .toorder2.inmedium{order: 2;}
+    .toorder1.inmedium{order: 1;}
 
     .notdisplay.inmedium{display: none!important;}
 
@@ -463,6 +651,24 @@ div.content div.sixth ul li{
     div.content div.eighth img{
         width: 150px;
     }
+    div.content div.sixth  div.content ul:not(#services) li:first-child h3{
+        font-size: 12px!important;
+    }
+    div.content div.fourth div.image img {
+        top: -150px;
+    }
+    div.content div.fourth div.box p{
+        font-size: 14px!important;
+        line-height: 20px!important;
+    }
+    .display.inmedium{display: block!important;}
+    header div.logo h2{
+        color:white!important;
+        padding-top: 10px;
+    }
+    div.logo h2{
+        font-size: 20px!important;
+    }
 }
 /*Large*/
 @media (max-width: 2000px) {
@@ -484,53 +690,15 @@ div.content div.sixth ul li{
         padding-left: 10%;
     }
 
-    div.content div.first{
-        background: url("../Image/Background/FirstLine.webp");
-        background-repeat: no-repeat;
-        background-size: 60%;
-        background-position: 50% 0%;
-    }
 
-    div.content div.first div.wrapper{
-        background: url("../Image/Background/FirstDots.svg");
-        background-repeat: no-repeat;
-        background-position: -10% 0%;
-        background-size: 50%;
-    }
-    div.content div.second .background{
-        left: 35%;
-        width: 60%;
-        top: 1600px;
-        z-index: -2;
-    }
-    div.content div.third .background.dots{
-        top: 3800px;
-        z-index: -2;
-    }
-    div.content div.third .background.line{
-        left: 0%;
-        width: 80%;
-        top: 2650px;
-        z-index: -1;
-    }
-    div.content div.fourth .background.line{
-    top: -700px;
-    left: -650px;
-    z-index: 1;
-    width: 190%;
-    }
 
-    div.content div.fourth .background.dots{
-        top: -700px;
-        left: -650px;
-        z-index: -1;
-        width: 190%;
-    }
+
 
     div.content div.first .image img.relative.left{
         left: -40%;
         width: 140%;
     }
+
     div.content div.second  .image img.relative.right{
         width: 150%;
         right: 10%;
@@ -541,12 +709,7 @@ div.content div.sixth ul li{
         left: -30%;
     }
 
-
     div.content div.second div.wrapper{
-        background: url("../Image/Background/SecondDots.webp");
-        background-repeat: no-repeat;
-        background-position: 100% 80%;
-        background-size: 50%;
         overflow-x: hidden;
     }
 
@@ -574,11 +737,119 @@ div.content div.sixth ul li{
 
     div.content div.sixth  div.content ul li p{display: none;}
 
-    div.content div.sixth  div.content ul:not(#services) li:before{
+    div.content div.sixth  div.content ul:not(#services) li:not(:first-child):before{
         content:"\f00c";
         font-weight: bold;
         font-family: "Font Awesome 5 Free", serif;
     }
     div.content div.sixth  div.content ul li.have:before{color:#FEBA53}
+
+/*Background */
+    div.first div.backgroundImage img.line{
+        width: 70%;
+        top: -180px;
+        left: 10%;
+        z-index: -1;
+    }
+    div.first div.backgroundImage img.dots{
+        top: -100px;
+    }
+
+    div.second div.backgroundImage img.line{
+        top: -220px;
+        width: 60%;
+        left: 30%;
+        z-index: -1;
+    }
+    div.second div.backgroundImage img.dots{
+        top: 300px;
+        left: 50%;
+        z-index: 2;
+        width: 50%;
+    }
+
+    div.third div.backgroundImage img.line{
+        top: -200px;
+        left: 9%;
+        width: 70%;
+        z-index: -1;
+    }
+    div.third div.backgroundImage img.dots{
+        top: 800px;
+        z-index: -1;
+    }
+    div.third div.backgroundImage img.left{width: 50%;
+    top: -400px;
+    left: -150px;
+    z-index: -1;}
+
+    div.fourth div.backgroundImage img.line{
+        top: -350px;
+        z-index: 1;
+        left: 6%;
+        width: 60%;
+    }
+    div.fourth div.backgroundImage img.dots{
+        z-index: -1;
+        top: -400px;
+        left: 30%;
+    }
+
+    div.fifth div.backgroundImage img.line{
+        top: -200px;
+        left: -15%;
+        z-index: -1;
+    }
+    div.fifth div.backgroundImage img.dots{
+        top: -150px;
+        left: -10%;
+        z-index: -1;
+    }
+
+    div.sixth div.backgroundImage img.line{
+        top: -400px;
+        z-index: -1;
+        right: 0;
+        width: 40%;
+    }
+    div.sixth div.backgroundImage img.left{
+        width: 26%;
+        z-index: -1;
+        top: -150px
+    }
+    div.sixth div.backgroundImage img.right{
+        right: 0;
+        width: 15%;
+        top: 700px;
+    }
+
+    div.seventh div.backgroundImage img.line{
+        z-index: -1;
+        top: -450px;
+        left: 20%;
+    }
+    div.seventh div.backgroundImage img.bottomline{
+        z-index: -1;
+    }
+    div.seventh div.backgroundImage img.dotsblue{
+        z-index: -1;
+    }
+    div.seventh div.backgroundImage img.dotsorange{
+        right: 0;
+        z-index: -1;
+    }
+
+    footer div.backgroundImage img.line{
+        left: -10%;
+        top: -400px;
+    }
+
+
+
+
+
+
+
+
 
 }
