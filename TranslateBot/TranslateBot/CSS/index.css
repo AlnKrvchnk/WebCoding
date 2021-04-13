@@ -1,46 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('../CSS/FontAwesome/all.min.css');
-*{
-    font-family: 'Lato', sans-serif;}
+
+
+*{font-family: 'Lato', sans-serif;}
 *:before{font-family: "Font Awesome 5 Brands", serif;}
 *:after{font-family: "Font Awesome 5 Brands", serif;}
+div:not(.sixth) .col{align-self: center!important;}
+div.textincenter{text-align: center;}
+.relative{position: relative;}
+.absolute{position: absolute;}
 
-h2{
-    font-size: 35px!important;
-    font-weight: 900!important;
-    line-height: 110%!important;
-}
-h3{
-    font-size: 20px!important;
-    font-weight: 700!important;
-    line-height: 35px!important;
-}
-h4{
-    font-size: 23px!important;
-    line-height: 28px!important;
-    font-weight:500!important;
-}
-h5{
-    font-size: 15px!important;
-    font-weight: normal!important;
-}
-p{
-    font-size: 16px!important;
-    line-height: 28px!important;
-    font-weight: 500!important;
-}
 
-.light{color:white;}
-.dark{color:#31305C;}
-.gray{color:#444B65;}
-.lightgray{color:#9A9A9A;}
-.blue{color:#003399;}
-span{color:#FEBA53;}
+h2{font-size: 35px!important;font-weight: 900!important;line-height: 110%!important;}
+h3{font-size: 20px!important;font-weight: 700!important;line-height: 35px!important;}
+h4{font-size: 23px!important;line-height: 28px!important;font-weight:500!important;}
+h5{font-size: 15px!important;font-weight: normal!important;}
+p{font-size: 16px!important;line-height: 28px!important;font-weight: 500!important;}
 ul{list-style: none;}
-a {text-decoration: none!important;
-    cursor: pointer;
-    color:inherit!important;}
-a:hover {text-decoration: none; }
+a {text-decoration: none!important;cursor: pointer; color:inherit!important;}
+
 button{
     font-size: 16px!important;
     border-radius: 8px!important;
@@ -55,57 +33,6 @@ button{
     padding-left: 20px;
     padding-right: 20px;
 }
-div.content div.sixth div.col div.header{
-    height: 350px;
-}
-button.yellow,button.blue.toyellow:hover{
-    color: #2F3031;
-    background-color: #FEBA53;
-    font-weight: 600;
-}
-button.yellow:hover,button.blue.toyellow:hover{box-shadow: 0px 8px 35px rgb(254 186 83 / 67%);}
-button.white, button.blue.towhite:hover{
-    color: #052C9C;
-    border: #4f78cd solid 1px;
-    background: white;
-}
-button.blue, button.white.toblue:hover{
-    background: #003399;
-    color: white;
-    border: white solid 1px;
-}
-
-.owl-theme .owl-dots .owl-dot.active span{
-    background-color:#FEBA53;
-}
-.owl-theme .owl-dots .owl-dot span
-{
-    background-color: rgba(254,186,83,0.36);
-}
-.owl-carousel div.item .image{
-    height: 200px;
-}
-.owl-carousel div.item img{
-    height: 100%;
-    width: auto;
-    margin: auto;
-}
-
-
-
-input:focus{
-    outline: none;
-    border-bottom: 1px solid #004fe1;
-    box-shadow: 0 1px 0 0 #004fe1;
-}
-
-div.content div.ninth div.content div.icon{
-    background: #FEBA53;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-}
-header div.content div.button button.white{margin-left: 30px;}
 
 input.white{
     font-size: 15px;
@@ -127,27 +54,27 @@ input.gray{
     border: 1px solid #D9D9D9;
 }
 
+.light{color:white;}
+.dark{color:#262549;}
+.gray{color:#444B65;}
+.lightgray{color:#9A9A9A;}
+.blue{color:#003399;}
+span{color:#FEBA53;}
 
-div:not(.sixth) .col{align-self: center!important;}
+a:hover {text-decoration: none; }
+button.yellow,button.blue.toyellow:hover{color: #2F3031;background-color: #FEBA53;font-weight: 600;}
+button.yellow:hover,button.blue.toyellow:hover{box-shadow: 0px 8px 35px rgb(254 186 83 / 67%);}
+button.white, button.blue.towhite:hover{ color: #052C9C;border: #4f78cd solid 1px;background: white;}
+button.blue, button.white.toblue:hover{background: #003399;color: white; border: white solid 1px;}
 
-div.content div.sixth div.col div.button {
-    margin-bottom: 0px;
-    margin-top: auto;
-}
+input:focus{outline: none;border-bottom: 1px solid #004fe1;box-shadow: 0 1px 0 0 #004fe1;}
 
+/*--------Header------------*/
+header div.content div.button button.white{margin-left: 30px;}
 
+/*--------First------------*/
 
-div.textincenter{text-align: center;}
-.relative{position: relative;}
-.absolute{position: absolute;}
-div.button.social{
-    color:white;
-    border-radius: 8px;
-    height: 60px;
-    padding-left: 10%;
-    padding-top: 1%;
-    text-align: center;
-}
+div.button.social{color:white;border-radius: 8px; height: 60px;padding-left: 10%; padding-top: 1%;text-align: center;cursor: pointer;}
 
 div.button.social.telegram {background: #1DB1E2;}
 div.button.social.vk {background: #3278A6;}
@@ -156,52 +83,28 @@ div.button.social.talk-me {background: #e22921;}
 div.button.social.online-chat {background: #1a53c6;}
 div.button.social.viber {background: #89539D;}
 div.button.social.whatsapp {background: #128C7E;}
-div.button.social.whatsapp-business {
-    background: #128C7E;
-    line-height: 20px;
-}
+div.button.social.whatsapp-business {background: #128C7E;line-height: 20px;}
 div.button.social.webim {background: #375476;}
 div.button.social.livetex {background: #3c6f82;}
 div.button.social.avito {background: #97cf26;}
 div.button.social.odnoklassniki {background: #ef7f1a;}
 div.button.social.jivosita {background: #00be57;}
 div.button.social.instagram {background: #C13584;}
-div.button.social.add {
-    color: #052994!important;
-    border: dashed 4px #052994;
-    background-color: transparent;
+div.button.social.add {color: #052994!important; border: dashed 4px #052994;background-color: transparent;}
 
-}
+div.button.social .logo{color:white;text-align: center; line-height: 50px;font-family: 'Font Awesome 5 Brands', serif;font-size: 30px;width: 50px;border-radius: 50%;}
+div.button.social .logo img{width: 40px;height: 40px;}
 
+/*--------Second------------*/
 
+div.content div.second div.text div.image img{width: auto;height: 150px;}
+/*--------Third------------*/
 
+div.content div.third div.text div.image img{width: 150px;height: auto;}
 
+/*--------Fourth------------*/
 
-div.button.social .logo{
-    color:white;
-    text-align: center;
-    line-height: 50px;
-    font-family: 'Font Awesome 5 Brands', serif;
-    font-size: 30px;
-    width: 50px;
-    border-radius: 50%;
-}
-
-
-div.button.social .logo img{
-     width: 40px;
-     height: 40px;
- }
-div.content div.third div.text div.image img{
-    width: 150px;
-    height: auto;
-}
-
-div.content div.fourth div.image img{
-    top:-400px;
-    width: 100%;
-}
-
+div.content div.fourth div.image img{top:-400px;width: 100%;}
 div.content div.fourth div.box{
     background: #2659BE;
     border-radius: 8px;
@@ -211,66 +114,28 @@ div.content div.fourth div.box{
     -webkit-box-pack: justify;
     justify-content: space-between;
 }
+div.content div.fourth div.box div.part:not(:last-child){border-right: solid white 1px;}
 
-div.content div.fourth div.box div.part:not(:last-child){
-    border-right: solid white 1px;
-}
- div.content div.sixth div.content.wrapperbox{
-     margin: 0 auto;
-     box-shadow: 0 20px 30px rgb(77 68 68 / 12%);
-     border-radius: 20px;
-     background: white;
- }
-div.content div.sixth div.content.wrapperbox .box .header{
-    border-radius: 14px;
-    background: #003399;
+/*--------Sixth------------*/
 
-}
+div.content div.sixth div.col div.header{ height: 350px;}
+div.content div.sixth div.col div.button {margin-bottom: 0px;margin-top: auto;}
+div.content div.sixth div.content.wrapperbox{margin: 0 auto;box-shadow: 0 20px 30px rgb(77 68 68 / 12%);border-radius: 20px; background: white;}
+div.content div.sixth div.content.wrapperbox .box .header{border-radius: 14px;background: #003399;}
+div.content div.sixth ul li{margin-bottom: 20px;}
+div.content div.sixth  div.content ul li.donthave:before {color:#9A9A9A;}
 
-div.content div.seventh div.wrapperbox {
-    background: linear-gradient(324.65deg, #013398 31.69%, #0F2C65 109.83%);
-    box-shadow: 0 20px 30px rgb(83 122 200 / 72%);
-    border-radius: 10px;
-}
-div.content div.ninth div.content div.item{
-    border-radius: 8px;
-    text-align: left;
-    color: #262549;
-    box-shadow: 0px 10px 30px rgb(0 0 0 / 12%);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-}
-div.content div.eighth img{
-    width: 200px;
-}
+/*--------Seventh------------*/
 
+div.content div.seventh div.wrapperbox {background: linear-gradient(324.65deg, #013398 31.69%, #0F2C65 109.83%);box-shadow: 0 20px 30px rgb(83 122 200 / 72%);border-radius: 10px;}
 
-div.content div.sixth ul li{
-    margin-bottom: 20px;
-}
-div.content div.sixth  div.content ul li.donthave:before {
-    color:#9A9A9A;
+/*--------Ninth------------*/
 
-}
+div.content div.eighth img{ width: 200px;}
+div.content div.ninth div.content div.icon{background: #FEBA53;border-radius: 50%;height: 50px;width: 50px;}
+div.content div.ninth div.content div.item{border-radius: 8px;text-align: left;color: #262549;box-shadow: 0px 10px 30px rgb(0 0 0 / 12%);-webkit-transition: 0.5s;transition: 0.5s;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*--------Chat------------*/
 
  div.chatblock{
     position: relative;
@@ -298,26 +163,9 @@ div.chatblock div.head{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-div.chatblock div.head h3{
-    padding-left: 10px;
-    line-height: 20px!important;
-    font-size: 16px!important;
-}
-div.chatblock div.head h5{
-    padding-left: 10px;
-    line-height: 20px!important;
-    font-size: 13px!important;
-    opacity: 0.9;
-}
-div.chatblock div.contentChat{
-
-    bottom: 0;
-    height: 78%;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 5px;
-    box-shadow:  inset 0px -3px 20px 0px rgb(0 0 0 / 5%);
-}
+div.chatblock div.head h3{padding-left: 10px;line-height: 20px!important;font-size: 16px!important;}
+div.chatblock div.head h5{padding-left: 10px;line-height: 20px!important;font-size: 13px!important;opacity: 0.9;}
+div.chatblock div.contentChat{bottom: 0;height: 78%;width: 100%;padding-left: 10px;padding-right: 5px;box-shadow:  inset 0px -3px 20px 0px rgb(0 0 0 / 5%);}
 div.chatblock div.bottom{
     height: 50px;
     position: absolute;
@@ -328,12 +176,7 @@ div.chatblock div.bottom{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-div.chatblock div.bottom input, div.chatblock div.bottom input:focus{
-height: 100%;
-    border: none!important;
-    outline: none;
-    box-shadow: none;
-}
+div.chatblock div.bottom input, div.chatblock div.bottom input:focus{height: 100%;border: none!important;outline: none; box-shadow: none;}
 div.chatblock div.bottom .buttonicon,#chatclose{
     color: #0D42AD;
     font-size: 25px;
@@ -343,19 +186,8 @@ div.chatblock div.bottom .buttonicon,#chatclose{
     position: absolute;
     cursor: pointer;
 }
-#chatclose{
-    color: white;
-    opacity: 0.7;
-    margin-right: 20px;
-}
-#chatclose:hover{
-    opacity: 1;
-}
-div.chatblock div.contentChat{
-   overflow-y: scroll;
 
-
-}
+div.chatblock div.contentChat{overflow-y: scroll;}
 div.chatblock div.contentChat .botmessage{
     background: rgb(240, 240, 240);
     padding: 10px;
@@ -367,9 +199,7 @@ div.chatblock div.contentChat .botmessage{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-div.chatblock div.contentChat .text{
-    width: 100%;
-}
+div.chatblock div.contentChat .text{width: 100%;}
 div.chatblock div.contentChat .usermessage{
     background: rgb(240, 240, 256);
     padding: 10px;
@@ -388,7 +218,8 @@ div.chatblock div.contentChat::-webkit-scrollbar-button {  display: none; }
 div.chatblock div.contentChat::-webkit-scrollbar-track-piece { background-color: white;}
 div.chatblock div.contentChat::-webkit-scrollbar-thumb {  background-color: rgba(108 149 255/40%); border-radius: 5px;}
 
-
+#chatclose{color: white;opacity: 0.7;margin-right: 20px;}
+#chatclose:hover{opacity: 1;}
 #chattriger{
     background: rgb(26, 83, 198);
     height: 60px;
@@ -405,12 +236,8 @@ div.chatblock div.contentChat::-webkit-scrollbar-thumb {  background-color: rgba
     padding-top: 10px!important;
     padding-left: 13px!important;
 }
-#chatcontainer {
-    display: none;
-}
-#chattriger.notshow{
-    display: none;
-}
+#chatcontainer {display: none;}
+#chattriger.notshow{display: none;}
 #chatcontainer.show {
     position: fixed;
     display: block;
@@ -427,25 +254,6 @@ div.chatblock div.contentChat::-webkit-scrollbar-thumb {  background-color: rgba
     z-index: 100;
     margin: auto;
 }
-.spinLoader {
-    display: none;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Medium+Large*/
 @media (min-width: 767px){
@@ -466,18 +274,26 @@ div.chatblock div.contentChat::-webkit-scrollbar-thumb {  background-color: rgba
     div.button.social.add:hover {box-shadow:0px 0px 30px rgb(5 41 148 / 50%);}
 }
 
-
-
-
-
-
 /*XSmall*/
-@media (max-width: 576px){
-    .notdisplay.inxsmall{display: none;}
-}
+@media (max-width: 576px){.notdisplay.inxsmall{display: none;}}
+
 /*Small*/
 @media (max-width: 767px) {
-
+    .notdisplay.insmall{display: none;}
+    .display.insmall{display: block!important;}
+    .toorder2.insmall{order:2;}
+    .toorder1.insmall{ order:1;}
+    
+    h2{font-size: 22px!important;font-weight: 900!important;line-height: 110% !important;text-align: center;}
+    h4{font-size: 18px!important;}
+    
+    .button{text-align: center;}
+    
+     div.wrapper.medium.small{padding-right: 10%;padding-left: 10%;}
+    
+    /*--------Header------------*/
+    
+    header div.content{margin-top: 100%!important;}
     header.medium.small {
         background: url("../Image/Background/HeaderSmall.svg");
         background-repeat: no-repeat;
@@ -489,33 +305,9 @@ div.chatblock div.contentChat::-webkit-scrollbar-thumb {  background-color: rgba
         background: url(../Image/Header/MainImageMedium.webp);
         background-repeat: no-repeat;
         background-position: 50% 15%;
-        background-size: 70%;
-    }
-    div.wrapper.medium.small{
-        padding-right: 10%;
-        padding-left: 10%;
-    }
-
-    .notdisplay.insmall{display: none;}
-    .display.insmall{display: block!important;}
-    .toorder2.insmall{order:2;}
-    .toorder1.insmall{ order:1;}
-    h2{
-        font-size: 22px!important;
-        font-weight: 900!important;
-        line-height: 110% !important;
-        text-align: center;
-    }
-    h4{
-        font-size: 18px!important;
-    }
-    .button{
-        text-align: center;
-    }
-    header div.content{
-        margin-top: 100%!important;
-    }
-
+        background-size: 70%;}
+   
+   /*--------First------------*/
 
     div.button.social.telegram .logo{background: #1DB1E2;}
     div.button.social.vk .logo{background: #3278A6;}
@@ -524,89 +316,45 @@ div.chatblock div.contentChat::-webkit-scrollbar-thumb {  background-color: rgba
     div.button.social.online-chat .logo{background: #1a53c6;}
     div.button.social.viber .logo{background: #89539D;}
     div.button.social.whatsapp .logo{background: #128C7E;}
-    div.button.social.whatsapp-business .logo{
-        background: #128C7E;
-        line-height: 20px;
-    }
+    div.button.social.whatsapp-business .logo{background: #128C7E;line-height: 20px;}
     div.button.social.webim .logo{background: #375476;}
     div.button.social.livetex .logo img{width: 50px; height: auto;}
     div.button.social.avito .logo{width: 50px; height: auto;}
     div.button.social.odnoklassniki .logo{background: #ef7f1a;}
     div.button.social.jivosita .logo{background: #00be57;}
     div.button.social.instagram .logo{background: #C13584;}
-    div.button.social.add .logo{
-        color: #052994!important;
-        border: dashed 4px #052994;
-        background-color: transparent;
-    }
+    div.button.social.add .logo{color: #052994!important;border: dashed 4px #052994;background-color: transparent;}
 
-    div.button.social{
-        background: transparent !important;
-        border:none!important;
-        color:#9A9A9A;
-        margin-bottom: 20px;
-    }
-    div.button.social .logo{
-        font-size: 25px;
-        margin: auto;
-        margin-bottom: 15px;
-    }
+    div.button.social{background: transparent !important;border:none!important;color:#9A9A9A;margin-bottom: 20px;}
+    
+    div.button.social .logo{font-size: 25px;margin: auto;margin-bottom: 15px;}
+    div.button.social .logo img{width: 30px;height: 30px;}
 
+    /*--------Fourth------------*/
+    
+    div.content div.fourth div.block img.absolute{position: inherit;top:10px;}
+    div.content div.fourth div.box div.part:not(:last-child) {border-right: none;border-bottom:solid white 1px ;}
+    
+     /*--------Sixth------------*/
+    
+    div.content div.sixth  div.content ul li.have p{display: inline-block;margin-left: 10px;margin-bottom:0 ;}
+    div.content div.sixth  div.content ul li{margin-bottom:5px ;}
 
-    div.button.social .logo img{
-        width: 30px;
-        height: 30px;
-    }
-
-    div.content div.sixth  div.content ul li.have p{
-        display: inline-block;
-        margin-left: 10px;
-        margin-bottom:0 ;
-    }
-    div.content div.sixth  div.content ul li{
-        margin-bottom:5px ;
-    }
-
-    div.content div.sixth  div.content ul li.donthave:before {
-        display: none;
-
-    }
-    div.content div.sixth  div.content ul {
-        text-align: left;
-    }
-    div.content div.sixth div.col div.header{
-        height: auto!important;
-    }
-    div.content div.fourth div.block img.absolute{
-        position: inherit;
-        top:10px;
-    }
-    div.content div.fourth div.box div.part:not(:last-child) {
-        border-right: none;
-        border-bottom:solid white 1px ;}
-
+    div.content div.sixth  div.content ul li.donthave:before {display: none;}
+    div.content div.sixth  div.content ul {text-align: left;}
+    div.content div.sixth div.col div.header{height: auto!important;}
+    
+    /*--------Карусель------------*/
+    
+    .owl-theme .owl-dots .owl-dot.active span{background-color:#FEBA53;}
+    .owl-theme .owl-dots .owl-dot span{background-color: rgba(254,186,83,0.36);}
+    .owl-carousel div.item .image{height: 200px;}
+    .owl-carousel div.item img{height: 100%;width: auto; margin: auto;}
 }
+
 /*Medium*/
 @media (max-width:992px ) {
-    header.medium {
-        background: url("../Image/Background/HeaderMedium.svg");
-        background-repeat: no-repeat;
-        background-position: 50% 70%;
-        background-size: 120% 190%;
-        padding-bottom: 130px;
-    }
-    header div.wrapper.medium{
-        background: url(../Image/Header/MainImageMedium.webp);
-        background-repeat: no-repeat;
-        background-position: 90% 50%;
-        background-size: 40%;
-    }
-    div.wrapper.medium{
-        padding-right: 3%;
-        padding-left: 3%;
-    }
-
-
+     div.wrapper.medium{padding-right: 3%;padding-left: 3%;}
     .nobackground.inmedium{background: none!important;}
 
     .dark.tolight.inmedium{color:white !important;}
@@ -616,25 +364,9 @@ div.chatblock div.contentChat::-webkit-scrollbar-thumb {  background-color: rgba
     .toorder1.inmedium{order: 1;}
 
     .notdisplay.inmedium{display: none!important;}
-
-    #trigger{
-        position: relative;
-        width: 25px;
-        height: 25px;
-        display: block;
-        cursor: pointer;
-        background: url("../Image/Header/burger-menu.svg");
-        z-index: 3;
-    }
-
-    #trigger.show{
-        background: url("../Image/Header/back-arrow.svg");
-        position: fixed;
-    }
-    ul.nav{display: none;}
-
-
-
+    .display.inmedium{display: block!important;}
+    
+     ul.nav{display: none;}
     ul.nav.show{
         display: block;
         position: fixed;
@@ -646,210 +378,220 @@ div.chatblock div.contentChat::-webkit-scrollbar-thumb {  background-color: rgba
         background: rgba(266,266,266,1);
         height: 200px;
         width: 200px;
-        border-bottom-right-radius: 10px;
-    }
-    div.content div.eighth img{
-        width: 150px;
-    }
-    div.content div.sixth  div.content ul:not(#services) li:first-child h3{
-        font-size: 12px!important;
-    }
-    div.content div.fourth div.image img {
-        top: -150px;
-    }
-    div.content div.fourth div.box p{
-        font-size: 14px!important;
-        line-height: 20px!important;
-    }
-    .display.inmedium{display: block!important;}
-    header div.logo h2{
-        color:white!important;
-        padding-top: 10px;
-    }
-    div.logo h2{
-        font-size: 20px!important;
-    }
+        border-bottom-right-radius: 10px;}
+    
+    div.logo h2{font-size: 20px!important;}
+    
+    /*--------Header------------*/
+    
+    header.medium {
+        background: url("../Image/Background/HeaderMedium.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 70%;
+        background-size: 120% 190%;
+        padding-bottom: 130px;}
+    header div.wrapper.medium{
+        background: url(../Image/Header/MainImageMedium.webp);
+        background-repeat: no-repeat;
+        background-position: 90% 50%;
+        background-size: 40%;}
+
+     header div.logo h2{color:white!important;padding-top: 10px;}
+    
+    #trigger{
+        position: relative;
+        width: 25px;
+        height: 25px;
+        display: block;
+        cursor: pointer;
+        background: url("../Image/Header/burger-menu.svg");
+        z-index: 3; }
+
+    #trigger.show{background: url("../Image/Header/back-arrow.svg");position: fixed;}
+   
+    /*--------Fourth------------*/
+    
+    div.content div.fourth div.image img {top: -150px;}
+    div.content div.fourth div.box p{font-size: 14px!important;line-height: 20px!important;}
+    
+     /*--------Sixth------------*/
+ 
+    div.content div.sixth  div.content ul:not(#services) li:first-child h3{font-size: 12px!important;}
+    
+    /*--------Eight------------*/
+       
+    div.content div.eighth img{width: 150px;}
+    
 }
 /*Large*/
 @media (max-width: 2000px) {
+    
+    div.wrapper{padding-right: 10%;padding-left: 10%;}
+    .order1{order: 1;}
+    .order2{order: 2;}
+    
+    div.logo h2{color: #003399;font-family: "Roboto", serif;font-weight: 700;font-size: 35px;}
+    div.logo h2 b{font-weight: 900;}
+    .notdisplay.inlarge{display: none;}
 
+    /*--------Header------------*/
+    
     header {
         background: url("../Image/Background/HeaderLarge.svg");
         background-repeat: no-repeat;
         background-position: 400% -130%;
-        background-size: 90% 90%;
-    }
+        background-size: 90% 90%;}
     header div.wrapper{
         background: url("../Image/Header/MainImageLarge.png");
         background-repeat: no-repeat;
-        background-position: 170% 40%;
-        background-size: 80%;
-    }
-    div.wrapper{
-        padding-right: 10%;
-        padding-left: 10%;
-    }
+        background-position: 170% 45%;
+        background-size: 80%;}
+    
 
+    /*--------First------------*/
 
+    div.content div.first .image div.relative.left{left: -40%;}
 
+    /*--------Second------------*/
+    
+    div.content div.second  .image img.relative.right{ width: 150%; right: 10%; z-index: -1;}
+    
 
+    div.content div.second div.wrapper{overflow-x: hidden;}
 
-    div.content div.first .image img.relative.left{
-        left: -40%;
-        width: 140%;
-    }
-
-    div.content div.second  .image img.relative.right{
-        width: 150%;
-        right: 10%;
-        z-index: -1;
-    }
-    div.content div.third  .image img.relative.left {
-        width: 120%;
-        left: -30%;
-    }
-
-    div.content div.second div.wrapper{
-        overflow-x: hidden;
-    }
-
-
-    .order1{order: 1;}
-    .order2{order: 2;}
-
-
-    div.logo h2{
-        color: #003399;
-        font-family: "Roboto", serif;
-        font-weight: 700;
-        font-size: 35px;
-    }
-
-    div.logo h2 b{font-weight: 900;}
-
-    .notdisplay.inlarge{display: none;}
-
+    /*--------Third------------*/
+    
+    div.content div.third  .image img.relative.left { width: 120%; left: -30%; }
+    
+    /*--------Fourth------------*/
+    
     div.content div.fourth div.row.block{
         background: linear-gradient(311.93deg, #013398 49.86%, #306FED 102.75%);
         box-shadow: 0px 20px 30px rgb(83 122 200 / 72%);
-        border-radius: 20px;
-    }
+        border-radius: 20px;}
 
+    /*--------Sixth------------*/
+    
     div.content div.sixth  div.content ul li p{display: none;}
-
-    div.content div.sixth  div.content ul:not(#services) li:not(:first-child):before{
-        content:"\f00c";
-        font-weight: bold;
-        font-family: "Font Awesome 5 Free", serif;
-    }
+    div.content div.sixth  div.content ul:not(#services) li:not(:first-child):before{content:"\f00c";font-weight: bold;font-family: "Font Awesome 5 Free", serif;}
     div.content div.sixth  div.content ul li.have:before{color:#FEBA53}
 
-/*Background */
-    div.first div.backgroundImage img.line{
-        width: 70%;
-        top: -180px;
-        left: 10%;
-        z-index: -1;
-    }
-    div.first div.backgroundImage img.dots{
-        top: -100px;
-    }
+    /*Background */
+    div.first div.backgroundImage img.line{    width: 70%;top: -210px;left: 12%;z-index: -1;}
+    div.first div.backgroundImage div.dots{top: -100px;}
 
-    div.second div.backgroundImage img.line{
-        top: -220px;
-        width: 60%;
-        left: 30%;
-        z-index: -1;
-    }
-    div.second div.backgroundImage img.dots{
-        top: 300px;
-        left: 50%;
-        z-index: 2;
-        width: 50%;
-    }
+    div.second div.backgroundImage img.line{top: -220px; width: 60%;left: 25%; z-index: -1;}
+    div.second div.backgroundImage div.dots{top: 450px;left: 60%;z-index: 2;width: 40%;transform: rotate(180deg);}
 
-    div.third div.backgroundImage img.line{
-        top: -200px;
-        left: 9%;
-        width: 70%;
-        z-index: -1;
-    }
-    div.third div.backgroundImage img.dots{
-        top: 800px;
-        z-index: -1;
-    }
-    div.third div.backgroundImage img.left{width: 50%;
-    top: -400px;
-    left: -150px;
-    z-index: -1;}
+    div.third div.backgroundImage img.line{top: -370px;
+    left: 19%;width: 60%;z-index: -1;}
+    div.third div.backgroundImage div.dots{top: 800px;z-index: -1;left:-10%;}
+    div.third div.backgroundImage img.left{width: 50%;top: -400px;left: -150px;z-index: -1;}
 
-    div.fourth div.backgroundImage img.line{
-        top: -350px;
-        z-index: 1;
-        left: 6%;
-        width: 60%;
-    }
-    div.fourth div.backgroundImage img.dots{
-        z-index: -1;
-        top: -400px;
-        left: 30%;
-    }
+    div.fourth div.backgroundImage img.line{ top: -350px; z-index: 1; left: 6%; width: 60%;}
+    div.fourth div.backgroundImage div.dots{ z-index: -1; top: -200px; left: 30%;}
 
-    div.fifth div.backgroundImage img.line{
-        top: -200px;
-        left: -15%;
-        z-index: -1;
-    }
-    div.fifth div.backgroundImage img.dots{
-        top: -150px;
-        left: -10%;
-        z-index: -1;
-    }
+    div.fifth div.backgroundImage img.line{top: -200px;left: -15%; z-index: -1;}
+    div.fifth div.backgroundImage div.dots{top: -300px;left: -15%;z-index: -1;}
 
-    div.sixth div.backgroundImage img.line{
-        top: -400px;
-        z-index: -1;
-        right: 0;
-        width: 40%;
-    }
-    div.sixth div.backgroundImage img.left{
-        width: 26%;
-        z-index: -1;
-        top: -150px
-    }
-    div.sixth div.backgroundImage img.right{
-        right: 0;
-        width: 15%;
-        top: 700px;
-    }
+    div.sixth div.backgroundImage img.line{top: -400px;z-index: -1;right: 0;width: 40%;}
+    div.sixth div.backgroundImage img.left{width: 26%; z-index: -1; top: -150px }
+    div.sixth div.backgroundImage img.right{ right: 0; width: 15%; top: 700px}
 
-    div.seventh div.backgroundImage img.line{
-        z-index: -1;
-        top: -450px;
-        left: 20%;
-    }
-    div.seventh div.backgroundImage img.bottomline{
-        z-index: -1;
-    }
-    div.seventh div.backgroundImage img.dotsblue{
-        z-index: -1;
-    }
-    div.seventh div.backgroundImage img.dotsorange{
-        right: 0;
-        z-index: -1;
-    }
+    div.seventh div.backgroundImage img.line{ z-index: -1;top: -450px; left: 20%;}
+    div.seventh div.backgroundImage img.bottomline{z-index: -1;}
+    div.seventh div.backgroundImage div.dots.blue{z-index: -1;}
+    div.seventh div.backgroundImage div.dots.orange{right: 0;z-index: -1;}
 
-    footer div.backgroundImage img.line{
-        left: -10%;
-        top: -400px;
-    }
+    footer div.backgroundImage img.line{left: -10%;top: -400px; z-index: -1}}
+
+/*Animation*/
+
+div.content div.first div.svgrobot svg path.dot:nth-last-child(3){animation-delay: 200ms;}
+div.content div.first div.svgrobot svg path.dot:nth-last-child(4){ animation-delay: 400ms;}
+
+div.content div.first div.svgrobot svg path.dot:nth-last-child(6){animation-delay: 200ms;}
+div.content div.first div.svgrobot svg path.dot:nth-last-child(7){animation-delay: 400ms;}
+div.content div.first div.svgrobot svg path.dot:nth-last-child(8){animation-delay: 600ms;}
+div.content div.first div.svgrobot svg path.dot:nth-last-child(9){animation-delay: 800ms;}
+div.content div.first div.svgrobot svg path.dot:nth-last-child(10){
+    animation-delay: 1000ms;
+}
+div.content div.first div.svgrobot svg path.dot:nth-last-child(11){animation-delay: 1200ms;}
+
+div.content div.first div.svgrobot svg path.dot{
+    fill:"#FEBA53";
+     animation-duration: 7s;
+    animation-name: dotwork;
+     animation-iteration-count: infinite; 
+}
+
+@keyframes dotwork{
+    16%,49%,78%{opacity: 1;}
+    0%,32%,63%,98%{opacity: 0;}  
+}
+
+div.content  div.dots svg path{
+     animation-duration: 10s;
+    animation-name: dots;
+     animation-iteration-count: infinite;}
+@keyframes dots{
+    25%,67%{ transform: translate(-15%, -20%) scale(2)}
+    50%,90%{transform: translate(10% ,10%) scale(1)}
+    0%,100%{}
+}
+div.content  div.dots svg path:nth-last-child(2n+1),{500ms}
+div.content   div.dots svg path:nth-last-child(3n){animation-delay: 1200ms;}
+div.content   div.dots svg path:nth-last-child(2n){animation-delay: 1600ms;}
+div.content   div.dots svg path:nth-last-child(5n){ animation-delay: 2000ms;}
+div.content   div.dots svg path:nth-last-child(7n){animation-delay: 2500ms;}
 
 
+div.content div.first div.svgrobot:hover svg path.arm{
 
+     animation-duration: 6s;
+    animation-name: robotarm;
+    animation-fill-mode:forwards;
+    transform-origin: 65% 52% 0;
+    
+}
+@keyframes robotarm{
+    0%,100%{}
+    40%,60%{transform:  rotate(-90deg);}
+}
+div.content div.first div.svgrobot:hover svg path.arm.a{
+   
+     animation-duration: 6s;
+    animation-name: robotarma; 
+    animation-fill-mode:forwards;
+        transform-origin: 65% 52% 0;
+}
+@keyframes robotarma{
+     0%,100%{    }
+    40%,60%{transform:  rotate(-90deg);}
+    45%{transform:  rotate(-85deg);}
+    55%{transform:  rotate(-95deg);}
+}
 
-
-
-
-
-
+div.content div.first div.svgrobot:hover svg path.eyer{
+      
+     animation-duration: 6s;
+    animation-name: eyer; 
+    animation-fill-mode:forwards;
+}
+div.content div.first div.svgrobot:hover svg path.eyel{
+      animation-duration: 6s;
+    animation-name: eyel; 
+    animation-fill-mode:forwards;
+}
+@keyframes eyer{
+    0%,100%{}
+    45%{transform: translate(-2%, 0%);}
+    55%{transform: translate(-2%, 0%);}
+    
+}
+@keyframes eyel{
+     0%,100%{}
+    45%{transform: translate(-2%, 1%);}
+    55%{transform: translate(-2%, 1%);}
 }

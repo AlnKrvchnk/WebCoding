@@ -1,4 +1,17 @@
 //переход по ссылкам
+
+function SendMessage(){
+     var re = /^(\+)?(\(\d{2,3}\) ?\d|\d)(([ \-]?\d)|( ?\(\d{2,3}\) ?)){5,12}\d$/;
+    userNumber=document.getElementById('usernumber').value;
+    userName=document.getElementById('username');
+    userText=document.getElementById('usertext');
+    var valid = re.test(userNumber);
+    if (valid) output = 'Номер телефона введен правильно!';
+    else output = 'Номер телефона введен неправильно!';
+    alert( output);
+}
+
+
 function redirectTo(href){
     switch (href){
         case 'logo':
@@ -11,6 +24,7 @@ function redirectTo(href){
             window.location.href="#wanttouse"
             break;
         case 'sendmessage':
+            SendMessage();
             window.location.href="#sendmessage"
             break;
         case 'writetobot':
@@ -200,8 +214,20 @@ document.getElementById("chatclose").onclick = function() {
 function openChat() {
     document.getElementById("chatcontainer").classList.toggle("show");
     document.getElementById("chattriger").classList.toggle("notshow");
+   /* document.getElementById('chatcontainer').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      sendMassegeBot(document.getElementById('usermassege1'),1);
+    }
+});*/
+    PressEnter('chatcontainer', 'usermassege1', 1 ); 
 }
-
+function PressEnter(cntainerId, inputId, chatNumber) {
+     document.getElementById(cntainerId).addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      sendMassegeBot(document.getElementById(inputId),chatNumber);
+    }
+     });
+}
 
 
 function answerMassegeBot(answer,id){
